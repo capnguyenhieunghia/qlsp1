@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý sản phẩm thông minh</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="brand-mark">Q</span><span>QUẢN LÝ PRO<small>PRODUCT & SALES</small></span></div>
+    <nav>
+      <button class="nav active" data-page="dashboard">▦ <span>Tổng quan</span></button>
+      <button class="nav" data-page="products">▣ <span>Sản phẩm</span></button>
+      <button class="nav" data-page="orders">🛒 <span>Đơn hàng</span></button>
+      <button class="nav" data-page="inventory">▤ <span>Kho hàng</span></button>
+      <button class="nav" data-page="reports">▥ <span>Báo cáo</span></button>
+      <button class="nav" data-page="data">⇅ <span>Dữ liệu & sao lưu</span></button>
+    </nav>
+    <div class="sidebar-foot">Phiên bản 1.0 · Lưu trên thiết bị</div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobileMenu">☰</button>
+      <div><div class="eyebrow">HỆ THỐNG QUẢN TRỊ</div><h1 id="pageTitle">Tổng quan</h1></div>
+      <div class="top-actions"><button class="icon-btn" id="themeBtn" title="Đổi giao diện">◐</button><span class="avatar">AD</span></div>
+    </header>
+    <section id="pageContent"></section>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" id="modal"></div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
